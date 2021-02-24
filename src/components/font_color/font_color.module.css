@@ -1,0 +1,21 @@
+.select {
+  width: 100%;
+  display: flex;
+  padding: 1.3em 8em;
+  background: rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+.select > li {
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.select > li:hover {
+  opacity: 1;
+}
+
+.select .active {
+  opacity: 1;
+}
