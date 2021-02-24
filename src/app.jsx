@@ -19,8 +19,9 @@ function App(props) {
 });
 
   const handleListDelite = (list) =>{
+    const {color} = listsState;
     const lists = listsState.lists.filter(item=> item.id!==list.id)
-    setLists({lists})
+    setLists({lists,color})
   }
 
   const handleAddList = (name)=>{
