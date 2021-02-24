@@ -24,10 +24,10 @@ const ToDo = React.memo(({list,onDelite,onCheck}) => {
                 {list.name}
             </div>
 
-            {list.check&&<div
-                className={styles.check}>
+            <div
+                className={`${styles.check} ${list.check&&styles.checked}`}>
                 &#x2713;
-            </div>}
+            </div>
         </li>
     );
 });
